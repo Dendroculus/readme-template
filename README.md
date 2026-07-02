@@ -145,6 +145,25 @@ readme-template/
 This repository is intended as a documentation library, not a one-click starter template.  
 If you use GitHub's **Use this template** button, GitHub will copy the entire repository, including `templates/`, `snippets/`, and `examples/`.
 
+## 🤝 Contributing
+
+Contributions are welcome.
+
+You can help by adding new README templates, snippets, examples, badge groups, or documentation improvements.
+
+Before contributing, please read [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+Good contribution ideas:
+
+- Mobile app README template
+- Backend API README template
+- Python CLI README template
+- Machine learning project README template
+- Docker setup snippet
+- Deployment snippet
+- Testing snippet
+- API endpoints snippet
+
 ## 📜 License
 
 Licensed under the MIT License. See [LICENSE](./LICENSE) for details.
