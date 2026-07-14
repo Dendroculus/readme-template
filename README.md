@@ -1,169 +1,216 @@
 <div align="center">
 
-# ✨ README Template
+# ✨ README Template Library
 
-### Clean, reusable README templates for full-stack apps, AI tools, Discord bots, and portfolio projects
+### Reusable README systems for full-stack apps, AI platforms, Discord bots, APIs, CLIs, assignments, and portfolio projects
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Markdown-Templates-000000?logo=markdown&logoColor=white" alt="Markdown Templates">
-  <img src="https://img.shields.io/badge/Docs-Reusable-2563EB?logo=readthedocs&logoColor=white" alt="Reusable Docs">
-  <img src="https://img.shields.io/badge/Examples-Included-22C55E?logo=github&logoColor=white" alt="Examples Included">
+  <img src="https://img.shields.io/badge/Markdown-Templates-000000?logo=markdown&logoColor=white" alt="Markdown templates">
+  <img src="https://img.shields.io/badge/Templates-6-2563EB" alt="Six templates">
+  <img src="https://img.shields.io/badge/Snippets-15-7C3AED" alt="Fifteen snippets">
+  <img src="https://img.shields.io/badge/Examples-5-22C55E" alt="Five examples">
   <img src="https://img.shields.io/badge/License-MIT-22C55E?logo=opensourceinitiative&logoColor=white" alt="MIT License">
 </p>
 
 <div align="center">
 
-Reusable README templates and documentation snippets for building clean, consistent, and professional project documentation across multiple repositories.
+A practical documentation library for creating READMEs that explain what a project does, why it exists, how it works, and how to run it safely.
 
 </div>
 
-<br>
-
 ## 🚀 Why This Exists
 
-Writing a good README from scratch takes time. This repository provides reusable README templates, snippets, and real examples so new projects can start with a clean documentation structure immediately.
+A strong README is more than a setup note. It should help different readers answer different questions:
 
-Use it for:
+1. **Users:** What can this project do?
+2. **Developers:** How is it structured?
+3. **Reviewers:** What engineering decisions were made?
+4. **Contributors:** How can I run, test, and change it safely?
+5. **Recruiters or lecturers:** What problem did the project solve?
 
-- ⚡ Full-stack web apps
-- 🤖 AI-powered web tools
-- 💬 Discord bots
-- 📦 Small scripts and university projects
-- 🧩 Portfolio repositories
+This repository provides reusable templates, focused snippets, and completed examples so each new project can start from a clear documentation system instead of a blank page.
+
+## 🧭 Template Philosophy
+
+Good READMEs should explain:
+
+- **What** the project does
+- **Why** the project exists
+- **Who** it is for
+- **How** the important flows work
+- **How** to install, configure, test, and deploy it
+- **How** failures, security, caching, cleanup, and recovery are handled
+
+The templates are intentionally modular. Remove sections that do not apply rather than filling a README with empty headings.
 
 ## 📦 Templates
 
-| Template | Best For | Use When |
+| Template | Best For | Main Coverage |
 |---|---|---|
-| [Full-Stack Web](./templates/fullstack-web.md) | React + backend + database projects | Your project has frontend, backend, database, API routes, auth, or dashboard features |
-| [AI Web App](./templates/ai-web-app.md) | AI tools and async processing apps | Your project uses AI models, queues, storage, polling, signed URLs, or rate limits |
-| [Discord Bot](./templates/discord-bot.md) | Discord bots and worker-based bots | Your project uses slash commands, bot events, queues, workers, or Discord delivery |
-| [Minimal](./templates/minimal.md) | Small projects and assignments | Your project does not need a large README structure |
+| [Full-Stack Web](./templates/fullstack-web.md) | React, Vue, or similar frontend + backend + database | Features, auth, realtime, API, schema, testing, deployment |
+| [AI Web App](./templates/ai-web-app.md) | AI tools, async jobs, image apps, cloud processing | Provider abstraction, queues, signed URLs, polling, limits, cleanup |
+| [Discord Bot](./templates/discord-bot.md) | Feature-oriented bots, utility bots, game bots, worker bots | Commands, cogs, workflows, views, persistence, scheduled tasks, recovery |
+| [Backend API](./templates/backend-api.md) | REST or GraphQL backend services | Endpoints, auth, validation, database, errors, observability |
+| [Python CLI](./templates/python-cli.md) | Automation, developer tools, terminal apps | Installation, commands, configuration, examples, packaging |
+| [Minimal](./templates/minimal.md) | Assignments, experiments, and small utilities | Purpose, usage, setup, structure, license |
 
 ## 🧩 Snippets
 
 | Snippet | Purpose |
 |---|---|
-| [Badges](./snippets/badges.md) | Reusable tech stack badge groups |
-| [Contributors](./snippets/contributors.md) | Reusable contributors table |
-| [Environment](./snippets/environment.md) | Backend/frontend environment variable sections |
-| [Local Development](./snippets/local-development.md) | Reusable setup and run instructions |
-| [Security Notes](./snippets/security-notes.md) | Common security checklist |
+| [Architecture Highlights](./snippets/architecture-highlights.md) | Explain boundaries, responsibilities, and major decisions |
+| [API Endpoints](./snippets/api-endpoints.md) | Reusable REST endpoint tables and legends |
+| [Badges](./snippets/badges.md) | Technology, status, license, and deployment badge groups |
+| [Commands Table](./snippets/commands-table.md) | CLI and Discord command documentation |
+| [Contributors](./snippets/contributors.md) | Maintainer and contributor sections |
+| [Deployment](./snippets/deployment.md) | Deployment checklist and platform-neutral notes |
+| [Environment](./snippets/environment.md) | Required and optional environment-variable layouts |
+| [Local Development](./snippets/local-development.md) | Cross-platform setup instructions |
+| [Project Structure](./snippets/project-structure.md) | Repository-tree patterns with useful comments |
+| [Reliability](./snippets/reliability.md) | Timeouts, retries, fallback, recovery, cleanup, and caching |
+| [Runtime Flows](./snippets/runtime-flows.md) | Step-by-step request, job, event, and interaction flows |
+| [Screenshots](./snippets/screenshots.md) | Images, collapsible previews, and video demos |
+| [Security Notes](./snippets/security-notes.md) | Secrets, validation, permissions, uploads, and abuse protection |
+| [Testing](./snippets/testing.md) | Unit, integration, end-to-end, lint, and smoke-test sections |
+| [Troubleshooting](./snippets/troubleshooting.md) | Common setup and runtime failure documentation |
 
-## 📚 Examples
+## 📚 Completed Examples
 
-| Example | Based On | Use As Reference For |
+| Example | Inspired By | Useful Reference For |
 |---|---|---|
-| [Full-Stack Web Example](./examples/fullstack-web.example.md) | Genius Society Hotel | Booking systems, admin dashboards, REST APIs, realtime apps |
-| [AI Web App Example](./examples/ai-web-app.example.md) | PixelForge | AI tools, image apps, cloud storage, async processing |
-| [Discord Bot Example](./examples/discord-bot.example.md) | Discord Image Upscaler Bot | Discord bots, slash commands, workers, queue systems |
+| [AI Web App Example](./examples/ai-web-app.example.md) | PixelForge | AI image tools, hybrid processing, async jobs, cloud storage |
+| [Discord Bot Example](./examples/discord-bot.example.md) | AniAvatar | Feature ownership, progression, games, rendering, API fallback |
+| [Full-Stack Web Example](./examples/fullstack-web.example.md) | Hotel reservation platform | Auth, booking, payments, admin dashboard, realtime updates |
+| [Backend API Example](./examples/backend-api.example.md) | Task ownership API | JWT, protected CRUD, user-owned records, JSON responses |
+| [Python CLI Example](./examples/python-cli.example.md) | Repository utility | Safe automation, dry runs, configuration, exit codes |
 
 ## 🚀 How To Use
 
-This repository is a **README template library**.
+This is a documentation library, not a framework starter.
 
-Do not copy the whole repository into your project unless you want the full template collection.
+1. Choose the closest file from [`templates/`](./templates).
+2. Copy it into your project as `README.md`.
+3. Replace the `{{PLACEHOLDERS}}`.
+4. Delete sections that do not apply.
+5. Add focused sections from [`snippets/`](./snippets).
+6. Compare your result with a completed file from [`examples/`](./examples).
+7. Render the README on GitHub and verify every link, image, and command.
 
-Instead:
-
-1. Open the template that matches your project
-2. Copy the file content
-3. Paste it into your project as `README.md`
-4. Replace the placeholders
-5. Use snippets or examples only when needed
-
-Template copy guide:
-
-```txt
-templates/fullstack-web.md  → README.md
-templates/ai-web-app.md     → README.md
-templates/discord-bot.md    → README.md
-templates/minimal.md        → README.md
+```text
+templates/fullstack-web.md → README.md
+templates/ai-web-app.md    → README.md
+templates/discord-bot.md   → README.md
+templates/backend-api.md   → README.md
+templates/python-cli.md    → README.md
+templates/minimal.md       → README.md
 ```
 
-Common placeholders:
+## 🧱 Recommended README Order
 
-```txt
-{{PROJECT_NAME}}
-{{PROJECT_SUBTITLE}}
-{{PROJECT_DESCRIPTION}}
-{{TECH_BADGES}}
-{{FEATURES}}
-{{ARCHITECTURE}}
-{{ENV_VARIABLES}}
-{{LOCAL_DEVELOPMENT}}
-{{CONTRIBUTORS_TABLE}}
+Substantial projects usually read well in this order:
+
+```text
+Language navigation
+Badges
+Project title and subtitle
+Why the project exists
+Feature groups
+Screenshots or demo
+Architecture highlights
+Main runtime flows
+Project structure
+Commands or API endpoints
+Architecture and stack
+Environment variables
+Local development
+Testing
+Deployment
+Reliability and security
+Troubleshooting
+Contributing
+License
+Acknowledgements
+Author or contact
 ```
 
-## 🧠 Recommendation Guide
+## 🧹 What To Remove
 
-Use [Full-Stack Web](./templates/fullstack-web.md) for portfolio web projects like hotel dashboards, admin systems, e-commerce platforms, booking apps, and SaaS-style apps.
+A README should not include a section only because a template contains it.
 
-Use [AI Web App](./templates/ai-web-app.md) when the project has AI processing, cloud storage, queues, polling, signed URLs, or long-running jobs.
+Remove:
 
-Use [Discord Bot](./templates/discord-bot.md) when the project has slash commands, bot events, background workers, queues, or Discord delivery logic.
-
-Use [Minimal](./templates/minimal.md) for smaller repositories where a full README would be too much.
+- Realtime sections when the project does not use realtime communication
+- Worker instructions when the project runs in one process
+- Database sections for stateless tools
+- Deployment notes for projects that are intentionally local-only
+- Screenshots that no longer match the current interface
+- Placeholder badges and empty tables
 
 ## 📁 Repository Structure
 
-```txt
+```text
 readme-template/
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
+├── UPGRADE_GUIDE.md
 ├── examples/
 │   ├── README.md
 │   ├── ai-web-app.example.md
+│   ├── backend-api.example.md
 │   ├── discord-bot.example.md
-│   └── fullstack-web.example.md
+│   ├── fullstack-web.example.md
+│   └── python-cli.example.md
 ├── snippets/
+│   ├── README.md
+│   ├── api-endpoints.md
+│   ├── architecture-highlights.md
 │   ├── badges.md
+│   ├── commands-table.md
 │   ├── contributors.md
+│   ├── deployment.md
 │   ├── environment.md
 │   ├── local-development.md
-│   └── security-notes.md
+│   ├── project-structure.md
+│   ├── reliability.md
+│   ├── runtime-flows.md
+│   ├── screenshots.md
+│   ├── security-notes.md
+│   ├── testing.md
+│   └── troubleshooting.md
 └── templates/
+    ├── README.md
     ├── ai-web-app.md
+    ├── backend-api.md
     ├── discord-bot.md
     ├── fullstack-web.md
-    └── minimal.md
+    ├── minimal.md
+    └── python-cli.md
 ```
 
-## 🛠️ Suggested Workflow
+## ✅ README Review Checklist
 
-1. Pick a template from [`templates/`](./templates)
-2. Copy it into your project as `README.md`
-3. Replace the placeholder values
-4. Copy useful sections from [`snippets/`](./snippets)
-5. Compare with a finished example from [`examples/`](./examples)
-6. Add project-specific screenshots, diagrams, endpoints, or architecture details
+Before publishing:
 
-## 📌 Note
-
-This repository is intended as a documentation library, not a one-click starter template.  
-If you use GitHub's **Use this template** button, GitHub will copy the entire repository, including `templates/`, `snippets/`, and `examples/`.
+- [ ] The title and description immediately explain the project
+- [ ] Features describe user value, not only implementation details
+- [ ] Screenshots still match the current interface
+- [ ] Architecture claims match the current codebase
+- [ ] Required and optional configuration are clearly separated
+- [ ] Setup commands work from a clean clone
+- [ ] Windows and macOS/Linux differences are documented where relevant
+- [ ] Tests, linting, and build commands are accurate
+- [ ] No secrets, private URLs, local absolute paths, or expired links are included
+- [ ] All placeholders and unused sections are removed
 
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome. Additions should remain practical, reusable, and easy to adapt.
 
-You can help by adding new README templates, snippets, examples, badge groups, or documentation improvements.
-
-Before contributing, please read [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-Good contribution ideas:
-
-- Mobile app README template
-- Backend API README template
-- Python CLI README template
-- Machine learning project README template
-- Docker setup snippet
-- Deployment snippet
-- Testing snippet
-- API endpoints snippet
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
 ## 📜 License
 
-Licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+Licensed under the MIT License. See [LICENSE](./LICENSE).

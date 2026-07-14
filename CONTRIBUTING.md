@@ -2,219 +2,118 @@
 
 Thanks for helping improve this README template library.
 
-This repository is a curated collection of reusable README templates, documentation snippets, and real README examples for different project types.
-
 ## What You Can Contribute
 
-You can contribute:
+- New project-type templates
+- Focused documentation snippets
+- Completed, sanitized example READMEs
+- Better badge groups
+- Cross-platform setup instructions
+- Deployment and testing guidance
+- Fixes for broken links, formatting, or inaccurate examples
 
-- New README templates
-- New documentation snippets
-- Better example READMEs
-- Badge groups for different tech stacks
-- Setup instructions for common frameworks
-- Grammar, formatting, and readability improvements
-- Fixes for broken links, outdated examples, or Markdown rendering issues
+## Repository Areas
 
-## Repository Structure
-
-```txt
-templates/  → reusable README templates with placeholders
-snippets/   → reusable README sections
-examples/   → finished README examples based on real projects
+```text
+templates/  Reusable README skeletons with placeholders
+snippets/   Small copy-ready sections
+examples/   Completed examples without secrets
 ```
 
-## Template Guidelines
+## Template Requirements
 
-When adding a new template, place it in:
+Use lowercase kebab-case filenames such as:
 
-```txt
-templates/
-```
-
-Use lowercase kebab-case file names:
-
-```txt
+```text
 backend-api.md
 mobile-app.md
 python-cli.md
 machine-learning.md
-data-analysis.md
 ```
 
-A good template should include:
+A substantial template should normally provide:
 
-- Project title
-- Short project description
-- Features
-- Tech stack
+- Project title and subtitle
+- Why the project exists
+- Grouped features
+- Architecture highlights
+- Runtime flows
 - Project structure
-- Environment variables, if needed
-- Local development instructions
-- Testing instructions, if needed
-- Security notes, if relevant
-- License
-- Contributors
+- Commands or endpoints
+- Environment variables
+- Local development
+- Testing
+- Reliability and security notes
+- Deployment when relevant
+- License and acknowledgements
 
-Use placeholders for project-specific values:
+Use clear placeholders:
 
-```txt
+```text
 {{PROJECT_NAME}}
 {{PROJECT_SUBTITLE}}
 {{PROJECT_DESCRIPTION}}
 {{REPOSITORY_URL}}
-{{FEATURES}}
-{{TECH_STACK}}
+{{FEATURE_GROUPS}}
+{{PROJECT_STRUCTURE}}
 {{ENV_VARIABLES}}
-{{LOCAL_DEVELOPMENT}}
-{{CONTRIBUTORS_TABLE}}
+{{TEST_COMMANDS}}
 ```
 
-## Snippet Guidelines
+Remove technology-specific assumptions unless the template is explicitly technology-specific.
 
-When adding reusable sections, place them in:
-
-```txt
-snippets/
-```
-
-Examples:
-
-```txt
-docker.md
-testing.md
-deployment.md
-api-endpoints.md
-screenshots.md
-```
+## Snippet Requirements
 
 Snippets should be:
 
-- Small
-- Focused
-- Easy to copy
-- Useful across multiple projects
+- Focused on one documentation problem
+- Easy to copy independently
+- Shorter than a full template
+- Explicit about which lines should be removed when unused
+- Safe to publish without secrets
 
-## Example Guidelines
+## Example Requirements
 
-When adding finished examples, place them in:
-
-```txt
-examples/
-```
-
-Examples should look like completed real-world READMEs.
-
-Before submitting examples, make sure they do not include:
+Examples should look like finished project READMEs, but must not include:
 
 - Real secrets
-- Private API keys
-- Private database URLs
-- Expiring asset links
-- Sensitive personal information
+- Private connection strings
+- Personal access tokens
+- Private infrastructure addresses
+- Expiring links
+- Sensitive user data
 
-Examples should use placeholders for anything that should not be reused directly.
+Public project names may be used as inspiration, but examples should remain reusable.
 
 ## Markdown Style
 
-Please keep the style:
+- Prefer clear Markdown over decorative HTML
+- Use HTML only for alignment, badges, media sizing, or collapsible presentation
+- Keep heading levels consistent
+- Avoid enormous ungrouped feature lists
+- Explain engineering decisions in plain language
+- Use sentence case for headings and descriptions
+- Verify rendering on GitHub before submitting
 
-- Clean and readable
-- Beginner-friendly
-- Professional enough for portfolio projects
-- Consistent with the existing templates
-- Markdown-first, with HTML only when it improves layout
-- No unnecessary complexity
+## Commit Messages
 
-## Commit Message Guide
+Conventional commit examples:
 
-Use this format:
-
-```txt
-type: short description
+```text
+docs(templates): add backend API template
+docs(snippets): add deployment checklist
+docs(examples): refresh Discord bot example
+fix(markdown): correct broken relative links
+refactor(structure): reorganize snippet index
 ```
-
-Examples:
-
-```txt
-docs: add backend API README template
-feat: add mobile app README template
-fix: correct broken markdown table
-refactor: reorganize snippet structure
-chore: update repository metadata
-```
-
-### Common Types
-
-| Type | Use For |
-|---|---|
-| `docs` | README changes, templates, snippets, examples, contributing docs |
-| `feat` | Adding a new template, snippet, example, or major documentation feature |
-| `fix` | Fixing typos, broken links, broken Markdown, or incorrect examples |
-| `refactor` | Reorganizing files or improving structure without changing meaning |
-| `chore` | Repo maintenance, license updates, config files, metadata, cleanup |
-
-For most changes in this repository, `docs:` is the best commit type.
-
-## Branch Naming Guide
-
-Use this format:
-
-```txt
-type/short-description
-```
-
-Examples:
-
-```txt
-docs/add-readme-template-library
-docs/add-backend-api-template
-feat/add-mobile-app-template
-fix/broken-template-links
-refactor/reorganize-snippets
-chore/update-license
-```
-
-### Branch Types
-
-| Type | Use For |
-|---|---|
-| `docs` | README changes, templates, snippets, examples, and contribution docs |
-| `feat` | New template categories or major new documentation features |
-| `fix` | Broken links, typos, incorrect examples, or Markdown rendering issues |
-| `refactor` | File reorganization or structure cleanup without changing meaning |
-| `chore` | Repo maintenance, license updates, config files, or metadata cleanup |
-
-For most changes in this repository, use `docs/`.
-
-## Pull Request Format
-
-Use a clear PR title:
-
-```txt
-docs: add reusable README templates and documentation assets
-```
-
-Use bullet points in the PR body:
-
-```md
-* Add or update the first thing changed.
-* Add or update the second thing changed.
-* Add or update the third thing changed.
-
-Summary:
-Optional short note explaining why the change is useful.
-```
-
-The summary section is optional.
 
 ## Pull Request Checklist
 
-Before opening a pull request:
-
-- [ ] Files are placed in the correct folder
-- [ ] Templates use placeholders where needed
-- [ ] Examples do not include secrets or private data
+- [ ] Files are in the correct folder
+- [ ] New templates use placeholders
+- [ ] Examples contain no secrets
+- [ ] Relative links resolve
 - [ ] Markdown renders correctly
-- [ ] Links are working
-- [ ] Formatting matches the existing README style
+- [ ] Commands are syntactically valid
+- [ ] Unused template sections were not left empty
+- [ ] The root indexes were updated

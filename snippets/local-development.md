@@ -1,74 +1,38 @@
-# Local Development Snippet
+# Local Development Snippets
 
-## Full-Stack Web App
-
-````md
-## 🚀 Local Development
-
-### 1. Clone
-
-```bash
-git clone {{REPOSITORY_URL}}
-cd {{REPOSITORY_FOLDER}}
-```
-
-### 2. Run Backend
-
-```bash
-cd backend
-npm install
-npm run setup
-npm run dev
-```
-
-### 3. Run Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-````
-
-## AI Full-Stack App
-
-````md
-## 🚀 Local Development
-
-### 1. Run Backend
-
-```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-### 2. Run Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-````
-
-## Discord Bot
-
-````md
-## 🚀 Local Development
+## Python
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python bot.py
 ```
 
-If the project uses a worker, run it in a second terminal:
+```powershell
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
 
 ```bash
-python worker.py
+# macOS / Linux
+source .venv/bin/activate
 ```
-````
+
+```bash
+pip install -r requirements.txt
+```
+
+## Node.js
+
+```bash
+npm install
+npm run dev
+```
+
+## Copy Environment Files
+
+```powershell
+Copy-Item .env.example .env
+```
+
+```bash
+cp .env.example .env
+```

@@ -1,72 +1,28 @@
-# Environment Variables Snippet
+# Environment Variable Snippets
 
-## Full-Stack Web App
-
-````md
-## ⚙️ Environment Variables
-
-### Backend (`backend/.env`)
+## Required and Optional Groups
 
 ```env
-NODE_ENV=development
-PORT=3000
-
-DB_NAME={{DATABASE_NAME}}
-DB_USER={{DATABASE_USER}}
-DB_PASSWORD={{DATABASE_PASSWORD}}
-DB_HOST=127.0.0.1
-DB_DIALECT=postgres
-
-JWT_SECRET={{JWT_SECRET}}
-
-BASE_URL=http://localhost:3000
-API_URL=http://localhost:3000/api
-```
-
-### Frontend (`frontend/.env`)
-
-```env
-BASE_URL=http://localhost:3000
-VITE_API_URL=http://localhost:3000/api
-VITE_DEBUG_MODE=true
-```
-
-For production, do not use `localhost`. Use the deployed backend URL instead.
-````
-
-## AI Full-Stack App
-
-````md
-## ⚙️ Environment Variables
-
-### Backend
-
-```env
+# Required
 DATABASE_URL=
-ALLOWED_ORIGINS=
-CLOUDFLARE_TURNSTILE_SITE_KEY=
-CLOUDFLARE_TURNSTILE_SECRET_KEY=
-AZURE_CONNECTION_STRING=
-REPLICATE_API_TOKEN=
+APPLICATION_SECRET=
+
+# Optional integrations
+REDIS_URL=
+EXTERNAL_API_KEY=
+
+# Runtime behavior
 ENVIRONMENT=development
+LOG_LEVEL=INFO
 ```
 
-### Frontend
+## Documentation Table
 
-```env
-VITE_API_BASE_URL=http://127.0.0.1:8000/api
-VITE_TURNSTILE_SITE_KEY=
-```
-````
+| Variable | Required | Scope | Description |
+|---|---:|---|---|
+| `DATABASE_URL` | Yes | Backend | Primary database connection |
+| `APPLICATION_SECRET` | Yes | Backend | Token or session signing secret |
+| `REDIS_URL` | No | Backend | Optional cache connection |
+| `VITE_API_URL` | Yes | Frontend | Public API base URL |
 
-## Discord Bot
-
-````md
-## ⚙️ Environment Variables
-
-```env
-DISCORD_TOKEN=
-DATABASE_URL=
-AZURE_CONNECTION_STRING=
-```
-````
+Never place backend secrets in browser-exposed variables.

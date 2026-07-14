@@ -1,132 +1,131 @@
 <div align="center">
 
-  EN | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md) | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md)
+{{LANGUAGE_NAVIGATION}}
+
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-{{REACT_VERSION}}-61DAFB?logo=react&logoColor=white" alt="React">
-  <img src="https://img.shields.io/badge/Vite-{{VITE_VERSION}}-646CFF?logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/{{BACKEND_FRAMEWORK}}-009688?logo=fastapi&logoColor=white" alt="{{BACKEND_FRAMEWORK}}">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/{{STORAGE_PROVIDER}}-0078D4?logo=microsoft-azure&logoColor=white" alt="{{STORAGE_PROVIDER}}">
-</p>
-
-<p align="center" style="margin-top: -12px;">
-  <img src="https://img.shields.io/badge/License-{{LICENSE_NAME}}-22C55E?logo=opensourceinitiative&logoColor=white" alt="{{LICENSE_NAME}}">
-  <img src="https://img.shields.io/badge/{{AI_PROVIDER}}-111111" alt="{{AI_PROVIDER}}">
+  {{TECH_BADGES}}
 </p>
 
 <div align="center">
 
 # ✨ {{PROJECT_NAME}}
+
 ### {{PROJECT_SUBTITLE}}
+
 </div>
 
 ## 🚀 Why {{PROJECT_NAME}}
 
-<div style="max-width: 720px;">
-
 {{PROJECT_DESCRIPTION}}
 
-</div>
-
-<br>
-
-- ⚡ {{HIGHLIGHT_1}}  
-- 🔐 {{HIGHLIGHT_2}}  
-- 🧠 {{HIGHLIGHT_3}}  
-- 🎨 {{HIGHLIGHT_4}}  
-- 🛠️ {{HIGHLIGHT_5}}  
+- ⚡ {{HIGHLIGHT_1}}
+- 🔐 {{HIGHLIGHT_2}}
+- 🧠 {{HIGHLIGHT_3}}
+- 🎨 {{HIGHLIGHT_4}}
+- 🛠️ {{HIGHLIGHT_5}}
 
 ## 🎯 Features
 
-### A) Core AI / Tool Features
+### A) AI tools
 
-1. {{TOOL_FEATURE_1}}  
-2. {{TOOL_FEATURE_2}}  
-3. {{TOOL_FEATURE_3}}  
-4. {{TOOL_FEATURE_4}}  
-5. {{TOOL_FEATURE_5}}  
+1. **{{AI_FEATURE_1}}** — {{AI_FEATURE_1_DESCRIPTION}}
+2. **{{AI_FEATURE_2}}** — {{AI_FEATURE_2_DESCRIPTION}}
+3. **{{AI_FEATURE_3}}** — {{AI_FEATURE_3_DESCRIPTION}}
 
-### B) Platform & System Capabilities
+### B) Instant browser or local tools
 
-6. 🛡️ {{SECURITY_CAPABILITY}}  
-7. 📊 {{USAGE_LIMIT_CAPABILITY}}  
-8. 🚦 {{RATE_LIMIT_CAPABILITY}}  
-9. ⚙️ {{ASYNC_JOB_CAPABILITY}}  
-10. 🔄 {{STATUS_TRACKING_CAPABILITY}}  
-11. 💾 {{SESSION_CAPABILITY}}  
-12. 🔑 {{SIGNED_URL_CAPABILITY}}  
-13. 🧹 {{CLEANUP_CAPABILITY}}  
+1. **{{LOCAL_FEATURE_1}}** — {{LOCAL_FEATURE_1_DESCRIPTION}}
+2. **{{LOCAL_FEATURE_2}}** — {{LOCAL_FEATURE_2_DESCRIPTION}}
+3. **{{LOCAL_FEATURE_3}}** — {{LOCAL_FEATURE_3_DESCRIPTION}}
+
+### C) Platform capabilities
+
+- Bot or abuse protection
+- Upload and result validation
+- Usage limits and rate limiting
+- Queue or concurrency control
+- Status polling or event delivery
+- Session restoration
+- Signed upload and result URLs
+- Cleanup and retention workflows
+- Stable error codes
+- Provider abstraction and fallback
+
+Remove capabilities that the project does not actually implement.
+
+## 🎥 Preview
+
+{{SCREENSHOTS_OR_DEMO}}
 
 ## 🧠 Architecture Highlights
 
-{{PROJECT_NAME}} is designed to balance performance, cost, and reliability while working with long-running or external AI services.
+- **Hybrid processing** — {{HYBRID_PROCESSING_DESCRIPTION}}
+- **Async jobs** — {{ASYNC_JOB_DESCRIPTION}}
+- **Provider boundary** — {{PROVIDER_DESCRIPTION}}
+- **Storage lifecycle** — {{STORAGE_DESCRIPTION}}
+- **Security boundary** — {{SECURITY_DESCRIPTION}}
+- **Failure recovery** — {{RECOVERY_DESCRIPTION}}
 
-- Queue-based AI processing for long-running jobs  
-- Decoupled upload → process → result pipeline  
-- Concurrency control to prevent overload and API abuse  
-- Stateless API with client-side job tracking  
-- Hybrid processing model: AI in the backend/cloud, instant tools in the browser  
-- Storage lifecycle management with automatic cleanup  
-- Pluggable provider layer for future AI integrations  
+## 🔄 Processing Flows
 
-## 💡 Design Considerations
+### AI processing flow
 
-- AI jobs are handled asynchronously because they can take time  
-- Polling can be used when WebSockets are unnecessary  
-- Signed URLs reduce backend load and improve upload/download performance  
-- Rate limiting and usage caps prevent abuse and control costs  
-- Files should be validated and sanitized before processing  
+1. User selects or uploads input
+2. Client validates type, size, and dimensions
+3. Backend verifies abuse protection and usage limits
+4. Input is uploaded directly or through a signed URL
+5. Backend reserves queue capacity and creates a job
+6. AI provider processes the request asynchronously
+7. Client polls or subscribes to job status
+8. Result is validated and stored
+9. User receives a signed or controlled result URL
+10. Cleanup removes expired inputs, results, and job data
 
-## 🔧 Processing Models
+### Instant processing flow
 
-### 🔄 AI Processing Flow
+1. User selects input
+2. Lightweight transformation runs locally
+3. Preview updates immediately
+4. Result is generated without an AI job
+5. User downloads the result
 
-1. User uploads input  
-2. Backend validates request and file metadata  
-3. Backend generates signed upload URL or accepts the payload  
-4. Job is created and queued  
-5. AI provider processes the job asynchronously  
-6. Client checks job status  
-7. Result is stored  
-8. Frontend retrieves and displays result  
-9. Cleanup system removes expired data  
+## 🏗️ Project Structure
 
-### ⚡ Client-Side Processing Flow
-
-1. User uploads input  
-2. Lightweight operation runs directly in the browser  
-3. No backend interaction required  
-4. Result is generated instantly  
-5. User downloads the processed file  
+```text
+{{PROJECT_STRUCTURE}}
+```
 
 ## 🏗️ Architecture & Stack
 
-<div style="max-width: 760px; line-height: 1.65;">
+- **Frontend — {{FRONTEND_STACK}}**  
+  {{FRONTEND_DESCRIPTION}}
 
-- **Frontend ({{FRONTEND_STACK}})** — {{FRONTEND_DESCRIPTION}}
+- **Backend — {{BACKEND_STACK}}**  
+  {{BACKEND_DESCRIPTION}}
 
-- **Backend ({{BACKEND_STACK}})** — {{BACKEND_DESCRIPTION}}
+- **AI provider — {{AI_PROVIDER}}**  
+  {{AI_PROVIDER_DESCRIPTION}}
 
-- **AI Provider ({{AI_PROVIDER}})** — {{AI_PROVIDER_DESCRIPTION}}
-
-- **Storage + Data ({{STORAGE_AND_DATABASE_STACK}})** — {{STORAGE_AND_DATABASE_DESCRIPTION}}
-
-</div>
+- **Storage and database — {{STORAGE_AND_DATABASE_STACK}}**  
+  {{STORAGE_AND_DATABASE_DESCRIPTION}}
 
 ## ⚙️ Environment Variables
 
 ### Backend
 
 ```env
+ENVIRONMENT=development
 DATABASE_URL=
-ALLOWED_ORIGINS=
 {{AI_PROVIDER_TOKEN_ENV}}=
 {{STORAGE_CONNECTION_ENV}}=
-{{SECURITY_ENV_1}}=
-{{SECURITY_ENV_2}}=
-ENVIRONMENT=development
+ALLOWED_ORIGINS=http://localhost:5173
+LOG_LEVEL=INFO
+
+# Optional
+REDIS_URL=
+DISCORD_WEBHOOK_URL=
 ```
 
 ### Frontend
@@ -136,65 +135,91 @@ VITE_API_BASE_URL=http://127.0.0.1:8000/api
 {{FRONTEND_PUBLIC_ENV}}=
 ```
 
-## 🚀 Local Development
+Browser-visible variables must never contain provider secrets.
 
-### 1. Clone
+## 🚀 Local Development
 
 ```bash
 git clone {{REPOSITORY_URL}}
 cd {{REPOSITORY_FOLDER}}
-```
 
-### 2. Run Backend
-
-```bash
+# Backend
 cd backend
 python -m venv .venv
-.venv\Scripts\activate
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# macOS / Linux
+source .venv/bin/activate
 pip install -r requirements.txt
 {{BACKEND_RUN_COMMAND}}
-```
 
-### 3. Run Frontend
-
-```bash
-cd frontend
+# Frontend
+cd ../frontend
 npm install
 npm run dev
 ```
 
-## 🔒 Security Notes
+## 🧪 Testing and Quality
 
-- Bot or abuse protection before expensive AI routes  
-- Signed URLs for controlled upload and result access  
-- Strict file validation and filename sanitization  
-- Rate limits and usage caps to control abuse and cost  
-- Automated cleanup for privacy and storage hygiene  
-- Production secrets must stay out of source control  
+```bash
+# Backend
+ruff check .
+pytest
 
-## 🛠 Built With
+# Frontend
+npm run lint
+npm run build
+npm test
+```
 
-- **{{FRONTEND_STACK}}**
-- **{{BACKEND_STACK}}**
-- **{{AI_PROVIDER}}**
-- **{{STORAGE_PROVIDER}}**
-- **{{DATABASE}}**
+Include provider mocks so normal tests do not consume paid inference.
+
+## 🚀 Deployment
+
+- Configure provider, storage, and database secrets
+- Set trusted origins and proxy behavior
+- Verify worker or queue startup when separate processes are used
+- Configure health checks
+- Confirm signed URL expiry behavior
+- Schedule cleanup jobs
+- Monitor provider failures, queue saturation, and storage growth
+
+## 🛡️ Reliability and Security
+
+- Expensive routes require abuse protection
+- Input type, size, dimensions, and content are validated
+- Filename and metadata are sanitized
+- Provider calls use explicit timeouts
+- Queue capacity prevents uncontrolled concurrency
+- Usage is charged at the documented lifecycle point
+- Failed jobs use stable error codes
+- Cleanup is idempotent
+- Provider failures can fall back or fail gracefully
+- Secrets and signed URLs are never logged
+
+## 🧯 Troubleshooting
+
+| Problem | Check |
+|---|---|
+| Job never leaves processing | Worker, provider timeout, queue consumer |
+| Upload fails | Signed URL expiry, CORS, storage credentials |
+| Provider returns errors | Token, model availability, request limits |
+| Browser tool crashes | Input dimensions and memory limits |
+| Results disappear | Retention and cleanup configuration |
 
 ## 🤝 Contributing
 
-PRs and improvements are welcome.  
-If you’re planning a bigger change, open an issue first to align on scope.
+Add tests for provider boundaries, validation, and job-state transitions.
 
 ## 📜 License
 
-Licensed under the {{LICENSE_NAME}} License. See [LICENSE](./LICENSE) for details.
+Licensed under the {{LICENSE_NAME}} License. See [LICENSE]({{LICENSE_PATH}}).
 
 ## 🙏 Acknowledgements
 
 - {{ACKNOWLEDGEMENT_1}}
 - {{ACKNOWLEDGEMENT_2}}
-- Open-source contributors and libraries used
 
-## 👤 Contributors
+## 👤 Author
 
-{{CONTRIBUTORS_TABLE}}
+{{AUTHOR_SECTION}}

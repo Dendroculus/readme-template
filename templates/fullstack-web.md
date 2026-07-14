@@ -1,186 +1,167 @@
 <div align="center">
 
-  EN | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md) | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md)
+{{LANGUAGE_NAVIGATION}}
+
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Node.js-{{NODE_VERSION}}-43853D?logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express-{{EXPRESS_VERSION}}-000000?logo=express&logoColor=white" alt="Express">
-  <img src="https://img.shields.io/badge/React-{{REACT_VERSION}}-61DAFB?logo=react&logoColor=white" alt="React">
-  <img src="https://img.shields.io/badge/Vite-{{VITE_VERSION}}-646CFF?logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL">
-</p>
-
-<p align="center" style="margin-top: -12px;">
-  <img src="https://img.shields.io/badge/{{CSS_FRAMEWORK}}-06B6D4?logo=tailwind-css&logoColor=white" alt="{{CSS_FRAMEWORK}}">
-  <img src="https://img.shields.io/badge/License-{{LICENSE_NAME}}-22C55E?logo=opensourceinitiative&logoColor=white" alt="{{LICENSE_NAME}}">
+  {{TECH_BADGES}}
 </p>
 
 <div align="center">
 
 # ✨ {{PROJECT_NAME}}
+
 ### {{PROJECT_SUBTITLE}}
+
 </div>
 
 ## 🚀 Why {{PROJECT_NAME}}
 
-<div style="max-width: 720px;">
-
 {{PROJECT_DESCRIPTION}}
 
-</div>
-
-<br>
-
-- ⚡ {{HIGHLIGHT_1}}  
-- 🔐 {{HIGHLIGHT_2}}  
-- 📊 {{HIGHLIGHT_3}}  
-- 🎨 {{HIGHLIGHT_4}}  
-- 🛠️ {{HIGHLIGHT_5}}  
+- ⚡ {{HIGHLIGHT_1}}
+- 🔐 {{HIGHLIGHT_2}}
+- 📊 {{HIGHLIGHT_3}}
+- 🎨 {{HIGHLIGHT_4}}
+- 🛠️ {{HIGHLIGHT_5}}
 
 ## 🎯 Features
 
-### A) Core Features
+### A) {{FEATURE_GROUP_1}}
 
-1. {{CORE_FEATURE_1}}  
-2. {{CORE_FEATURE_2}}  
-3. {{CORE_FEATURE_3}}  
-4. {{CORE_FEATURE_4}}  
-5. {{CORE_FEATURE_5}}  
+1. **{{FEATURE_1_NAME}}** — {{FEATURE_1_DESCRIPTION}}
+2. **{{FEATURE_2_NAME}}** — {{FEATURE_2_DESCRIPTION}}
+3. **{{FEATURE_3_NAME}}** — {{FEATURE_3_DESCRIPTION}}
 
-### B) Platform & System Capabilities
+### B) {{FEATURE_GROUP_2}}
 
-6. {{SYSTEM_FEATURE_1}}  
-7. {{SYSTEM_FEATURE_2}}  
-8. {{SYSTEM_FEATURE_3}}  
-9. {{SYSTEM_FEATURE_4}}  
-10. {{SYSTEM_FEATURE_5}}  
+1. **{{FEATURE_4_NAME}}** — {{FEATURE_4_DESCRIPTION}}
+2. **{{FEATURE_5_NAME}}** — {{FEATURE_5_DESCRIPTION}}
+3. **{{FEATURE_6_NAME}}** — {{FEATURE_6_DESCRIPTION}}
 
-## 🔴 Real-Time Implementation
+### C) Platform capabilities
 
-{{REALTIME_DESCRIPTION}}
+- {{CAPABILITY_1}}
+- {{CAPABILITY_2}}
+- {{CAPABILITY_3}}
+- {{CAPABILITY_4}}
 
-### Live Use Cases
+## 🎥 Screenshots and Demo
 
-1. **{{REALTIME_CASE_1_TITLE}}**  
-   {{REALTIME_CASE_1_DESCRIPTION}}
-
-2. **{{REALTIME_CASE_2_TITLE}}**  
-   {{REALTIME_CASE_2_DESCRIPTION}}
-
-3. **{{REALTIME_CASE_3_TITLE}}**  
-   {{REALTIME_CASE_3_DESCRIPTION}}
-
-### Realtime Architecture
-
-```txt
-Backend service action
-→ event publisher
-→ realtime transport
-→ WebSocket server
-→ authenticated client rooms
-→ frontend provider
-→ event-specific listeners
-→ UI state updates
-```
+{{SCREENSHOTS_OR_DEMO}}
 
 ## 🧠 Architecture Highlights
 
-- Split frontend and backend responsibilities  
-- REST API follows controller → service → model separation  
-- Database stores transactional and relational business data  
-- Authentication protects user and admin-only routes  
-- Reusable hooks, services, and UI components keep pages clean  
-- {{ARCHITECTURE_POINT_1}}  
-- {{ARCHITECTURE_POINT_2}}  
+- **Frontend ownership** — {{FRONTEND_ARCHITECTURE}}
+- **Backend ownership** — {{BACKEND_ARCHITECTURE}}
+- **Data layer** — {{DATA_ARCHITECTURE}}
+- **Authentication and authorization** — {{AUTH_ARCHITECTURE}}
+- **Realtime or event delivery** — {{REALTIME_ARCHITECTURE}}
+- **Failure handling** — {{FAILURE_ARCHITECTURE}}
 
-## 💡 Design Considerations
+## 🔄 Main Runtime Flows
 
-- {{DESIGN_CONSIDERATION_1}}  
-- {{DESIGN_CONSIDERATION_2}}  
-- {{DESIGN_CONSIDERATION_3}}  
-- {{DESIGN_CONSIDERATION_4}}  
+### {{PRIMARY_FLOW_NAME}}
 
-## 🔧 Processing Models
+1. {{PRIMARY_FLOW_STEP_1}}
+2. {{PRIMARY_FLOW_STEP_2}}
+3. {{PRIMARY_FLOW_STEP_3}}
+4. {{PRIMARY_FLOW_STEP_4}}
+5. {{PRIMARY_FLOW_STEP_5}}
 
-### 🔄 Server-Side Flow
+### Optional realtime flow
 
-1. {{SERVER_FLOW_1}}  
-2. {{SERVER_FLOW_2}}  
-3. {{SERVER_FLOW_3}}  
-4. {{SERVER_FLOW_4}}  
+```text
+Backend action
+→ event publisher
+→ WebSocket or notification transport
+→ authenticated client scope
+→ frontend provider
+→ event-specific state update
+```
 
-### ⚡ Client-Side Flow
+Remove this section when the project does not use realtime updates.
 
-1. {{CLIENT_FLOW_1}}  
-2. {{CLIENT_FLOW_2}}  
-3. {{CLIENT_FLOW_3}}  
-4. {{CLIENT_FLOW_4}}  
+## 🏗️ Project Structure
+
+```text
+{{PROJECT_STRUCTURE}}
+```
 
 ## 🏗️ Architecture & Stack
 
-<div style="max-width: 760px; line-height: 1.65;">
+- **Frontend — {{FRONTEND_STACK}}**  
+  {{FRONTEND_DESCRIPTION}}
 
-- **Frontend ({{FRONTEND_STACK}})** — {{FRONTEND_DESCRIPTION}}
+- **Backend — {{BACKEND_STACK}}**  
+  {{BACKEND_DESCRIPTION}}
 
-- **Backend ({{BACKEND_STACK}})** — {{BACKEND_DESCRIPTION}}
+- **Database — {{DATABASE_STACK}}**  
+  {{DATABASE_DESCRIPTION}}
 
-- **Database ({{DATABASE_STACK}})** — {{DATABASE_DESCRIPTION}}
+- **Infrastructure — {{INFRASTRUCTURE_STACK}}**  
+  {{INFRASTRUCTURE_DESCRIPTION}}
 
-</div>
+## 📚 API Endpoints
 
-## 📦 Main Dependencies
+### Legend
 
-### Frontend
+- **Public** — no authentication required
+- **Auth** — authenticated user required
+- **Admin** — elevated role required
 
-- {{FRONTEND_DEPENDENCY_1}}
-- {{FRONTEND_DEPENDENCY_2}}
-- {{FRONTEND_DEPENDENCY_3}}
+| Method | Endpoint | Access | Description |
+|---|---|---|---|
+| `POST` | `/api/auth/login` | Public | {{LOGIN_DESCRIPTION}} |
+| `GET` | `/api/{{RESOURCE}}` | Auth | {{LIST_DESCRIPTION}} |
+| `POST` | `/api/{{RESOURCE}}` | Auth | {{CREATE_DESCRIPTION}} |
+| `PUT` | `/api/{{RESOURCE}}/:id` | Auth | {{UPDATE_DESCRIPTION}} |
+| `DELETE` | `/api/{{RESOURCE}}/:id` | Admin | {{DELETE_DESCRIPTION}} |
 
-### Backend
+## 🗄️ Database Model
 
-- {{BACKEND_DEPENDENCY_1}}
-- {{BACKEND_DEPENDENCY_2}}
-- {{BACKEND_DEPENDENCY_3}}
+{{DATABASE_MODEL_DESCRIPTION}}
 
-## 📁 Project Structure
-
-```txt
-{{PROJECT_STRUCTURE}}
+```mermaid
+erDiagram
+    USER ||--o{ RESOURCE : owns
+    USER {
+        int id
+        string email
+    }
+    RESOURCE {
+        int id
+        int user_id
+    }
 ```
+
+Remove or replace the Mermaid diagram when it does not match the schema.
+
 ## ⚙️ Environment Variables
 
 ### Backend (`backend/.env`)
 
-Use either individual database variables or a single database URL, depending on how your backend config is written.
-
-#### Option A: Individual database variables
-
 ```env
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_HOST=127.0.0.1
-DB_DIALECT=postgres
+NODE_ENV=development
+PORT=3000
+DATABASE_URL=postgresql://user:password@localhost:5432/{{DATABASE_NAME}}
+JWT_SECRET=replace_me
+ALLOWED_ORIGINS=http://localhost:5173
+
+# Optional
+REDIS_URL=
+LOG_LEVEL=INFO
 ```
-
-#### Option B: Single database URL
-
-```env
-DATABASE_URL=postgres://user:password@localhost:5432/database_name
-```
-
-> Only use `DATABASE_URL` if your backend actually reads it from the environment.
 
 ### Frontend (`frontend/.env`)
 
 ```env
-BASE_URL=http://localhost:3000
 VITE_API_URL=http://localhost:3000/api
-VITE_DEBUG_MODE=true
+VITE_SOCKET_URL=http://localhost:3000
 ```
 
-For production, do not use `localhost`. Use the deployed backend URL instead.
+Never expose backend secrets through `VITE_` variables.
 
 ## 🚀 Local Development
 
@@ -191,22 +172,16 @@ git clone {{REPOSITORY_URL}}
 cd {{REPOSITORY_FOLDER}}
 ```
 
-### 2. Prepare Database
-
-```sql
-CREATE DATABASE {{DATABASE_NAME}};
-```
-
-### 3. Run Backend
+### 2. Backend
 
 ```bash
 cd backend
 npm install
-{{BACKEND_SETUP_COMMAND}}
+npm run setup
 npm run dev
 ```
 
-### 4. Run Frontend
+### 3. Frontend
 
 ```bash
 cd frontend
@@ -214,79 +189,70 @@ npm install
 npm run dev
 ```
 
-## 🧰 Useful Scripts
-
-### Backend
+### Optional root runner
 
 ```bash
 npm run dev
-npm run lint
-npm run lint:fix
 ```
 
-### Frontend
+## 🧪 Testing and Quality
 
 ```bash
-npm run dev
+# Backend
+cd backend
+npm run lint
+npm test
+
+# Frontend
+cd ../frontend
+npm run lint
 npm run build
-npm run preview
-npm run test
-npm run lint
-npm run lint:fix
+npm test
 ```
 
-## 🔒 Security Notes
+## 🚀 Deployment
 
-- JWT authentication is used for protected routes  
-- Admin-only routes use authentication and role authorization middleware  
-- Passwords are hashed before storage  
-- Environment variables are used for secrets and database credentials  
-- Never commit real `.env` files or production secrets  
+- Configure production secrets through the hosting platform
+- Use the production database URL
+- Replace localhost frontend variables
+- Configure allowed origins
+- Run migrations before serving traffic
+- Verify WebSocket support when realtime features are enabled
+- Confirm health checks and graceful shutdown
 
-## 🗄️ Database Schema
+## 🛡️ Reliability and Security
 
-### 📊 Entity Relationship Diagram
+- Passwords are hashed before storage
+- JWT or session tokens are validated on protected routes
+- Role checks protect elevated actions
+- Request payloads are validated
+- Database errors use stable public responses
+- Realtime connections authenticate before joining user or role scopes
+- Secrets remain outside source control
+- Logs avoid tokens, passwords, and private payloads
 
-<div align="center">
-  <img src="{{ERD_IMAGE_PATH}}" alt="ERD Diagram" width="700" style="max-width: 100%; height: auto;">
-</div>
+## 🧯 Troubleshooting
 
-## 📚 API Endpoints
-
-### Legend
-
-- **Public** — no login required  
-- **Auth** — login required  
-- **Admin** — admin role required  
-
-{{API_ENDPOINT_TABLES}}
-
-## 🧪 Testing & Quality
-
-```bash
-{{TEST_COMMANDS}}
-```
+| Problem | Check |
+|---|---|
+| Frontend cannot reach API | `VITE_API_URL`, CORS, backend port |
+| Database connection fails | `DATABASE_URL`, database existence, SSL requirements |
+| Realtime events are missing | Socket URL, authentication, room subscriptions |
+| Build fails in production | Runtime versions and environment variables |
 
 ## 🤝 Contributing
 
-PRs and improvements are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+PRs are welcome. Include tests for the affected backend or frontend flow.
 
 ## 📜 License
 
-Licensed under the {{LICENSE_NAME}} License. See [LICENSE](./LICENSE) for details.
+Licensed under the {{LICENSE_NAME}} License. See [LICENSE]({{LICENSE_PATH}}).
 
 ## 🙏 Acknowledgements
 
 - {{ACKNOWLEDGEMENT_1}}
 - {{ACKNOWLEDGEMENT_2}}
-- Open-source contributors and libraries used
 
-## 👤 Contributors
+## 👤 Author
 
-{{CONTRIBUTORS_TABLE}}
+{{AUTHOR_SECTION}}

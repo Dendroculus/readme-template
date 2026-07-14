@@ -1,53 +1,42 @@
-<div align="center">
+# {{PROJECT_NAME}}
 
-# ✨ {{PROJECT_NAME}}
-### {{PROJECT_SUBTITLE}}
+{{ONE_SENTENCE_DESCRIPTION}}
 
-</div>
-
-## 🚀 Overview
-
-{{PROJECT_DESCRIPTION}}
-
-## 🎯 Features
+## Features
 
 - {{FEATURE_1}}
 - {{FEATURE_2}}
 - {{FEATURE_3}}
 
-## 🏗️ Tech Stack
+## Requirements
 
-- {{TECH_1}}
-- {{TECH_2}}
-- {{TECH_3}}
+- {{REQUIREMENT_1}}
+- {{REQUIREMENT_2}}
 
-## 📁 Project Structure
-
-```txt
-{{PROJECT_STRUCTURE}}
-```
-
-## ⚙️ Environment Variables
-
-```env
-{{ENV_VARIABLES}}
-```
-
-## 🚀 Local Development
+## Setup
 
 ```bash
 git clone {{REPOSITORY_URL}}
 cd {{REPOSITORY_FOLDER}}
-{{INSTALL_COMMANDS}}
-{{RUN_COMMANDS}}
+{{INSTALL_COMMAND}}
 ```
 
-## 🧪 Testing
+## Usage
 
 ```bash
-{{TEST_COMMANDS}}
+{{RUN_COMMAND}}
 ```
 
-## 📜 License
+## Project Structure
+
+```text
+{{PROJECT_STRUCTURE}}
+```
+
+## Notes
+
+{{IMPORTANT_NOTES}}
+
+## License
 
 Licensed under the {{LICENSE_NAME}} License.

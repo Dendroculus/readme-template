@@ -1,140 +1,238 @@
 <div align="center">
 
-  EN | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md) | [YOUR_LANGUAGE](./docs/translation/README_YOUR_LANGUAGE.md)
+{{LANGUAGE_NAVIGATION}}
+
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-{{PYTHON_VERSION}}-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/discord.py-v2.x-7289DA.svg?logo=discord&logoColor=white" alt="discord.py">
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/License-{{LICENSE_NAME}}-green.svg" alt="{{LICENSE_NAME}}">
-  <img src="https://img.shields.io/badge/status-{{PROJECT_STATUS}}-green.svg" alt="Project Status">
+  {{TECH_BADGES}}
 </p>
 
 <div align="center">
 
 # ✨ {{PROJECT_NAME}}
 
+### {{PROJECT_SUBTITLE}}
+
 </div>
+
+## 🚀 Why {{PROJECT_NAME}}
 
 {{PROJECT_DESCRIPTION}}
 
-## 🎥 Demo
+- 🔍 {{HIGHLIGHT_1}}
+- 📈 {{HIGHLIGHT_2}}
+- 🎮 {{HIGHLIGHT_3}}
+- ⚙️ {{HIGHLIGHT_4}}
+- 🛡️ {{HIGHLIGHT_5}}
 
-{{DEMO_SECTION}}
+## 🎯 Features
 
-## ✨ Key Features
+### A) {{FEATURE_GROUP_1}}
 
-- 🚀 {{KEY_FEATURE_1}}
-- ☁️ {{KEY_FEATURE_2}}
-- 🛡️ {{KEY_FEATURE_3}}
-- 🔒 {{KEY_FEATURE_4}}
-- 🧠 {{KEY_FEATURE_5}}
+1. **{{FEATURE_1}}** — {{FEATURE_1_DESCRIPTION}}
+2. **{{FEATURE_2}}** — {{FEATURE_2_DESCRIPTION}}
+3. **{{FEATURE_3}}** — {{FEATURE_3_DESCRIPTION}}
 
-## 🏗️ Architecture
+### B) {{FEATURE_GROUP_2}}
 
-```txt
-Discord slash command
-→ bot command handler
-→ database queue
-→ background worker
-→ processing service
-→ storage or local output
-→ result delivery to Discord
+1. **{{FEATURE_4}}** — {{FEATURE_4_DESCRIPTION}}
+2. **{{FEATURE_5}}** — {{FEATURE_5_DESCRIPTION}}
+3. **{{FEATURE_6}}** — {{FEATURE_6_DESCRIPTION}}
+
+### C) Community and administration
+
+- {{COMMUNITY_FEATURE_1}}
+- {{COMMUNITY_FEATURE_2}}
+- {{ADMIN_FEATURE_1}}
+- {{ADMIN_FEATURE_2}}
+
+## 🎥 Command Previews
+
+{{SCREENSHOTS_OR_DEMO}}
+
+## 🧠 Architecture Highlights
+
+- **Thin cogs** register commands, validate Discord context, and orchestrate responses
+- **Feature packages** own workflows, services, views, repositories, and integrations
+- **Shared core packages** provide reusable Discord, logging, rendering, and persistence infrastructure
+- **Persistent storage** keeps progression, economy, polls, or other state across restarts
+- **Dedicated views** isolate button, select, and modal interaction state
+- **Scheduled tasks** handle maintenance, synchronization, refresh, or presence behavior
+- **Recovery workflows** restore persistent interactions after restarts
+- **External clients** use timeouts, rate limits, caching, validation, and fallback
+
+Delete architecture points that do not match the project.
+
+## 🔄 Main Runtime Flows
+
+### Command flow
+
+```text
+Discord interaction
+→ thin cog or command handler
+→ feature workflow or service
+→ repository, external provider, or renderer
+→ response formatter or view
+→ Discord response
 ```
 
-{{ARCHITECTURE_IMAGE}}
+### Optional background-job flow
 
-## 📂 Project Structure
+```text
+Discord command
+→ job validation
+→ queue or worker
+→ processing service
+→ result storage
+→ Discord delivery
+```
 
-```txt
+Keep this only when the bot really uses a worker or queue.
+
+### Optional persistent-view recovery
+
+1. Interaction state is stored with message and channel identifiers
+2. Bot reconnects or restarts
+3. Recovery workflow loads active records
+4. Expired records are finalized or removed
+5. Valid views are attached to existing messages
+
+## 🏗️ Project Structure
+
+```text
 {{PROJECT_STRUCTURE}}
 ```
 
-## 🚀 Quick Start
+## 🤖 Commands
 
-1. Clone the repository  
-2. Create and activate a virtual environment  
-3. Install dependencies  
-4. Create `.env`  
-5. Run the worker in one terminal  
-6. Run the bot in another terminal  
-7. Use the slash command in Discord  
+| Command | Category | Description |
+|---|---|---|
+| `/{{COMMAND_1}}` | {{CATEGORY_1}} | {{COMMAND_1_DESCRIPTION}} |
+| `/{{COMMAND_2}}` | {{CATEGORY_2}} | {{COMMAND_2_DESCRIPTION}} |
+| `/{{COMMAND_3}}` | {{CATEGORY_3}} | {{COMMAND_3_DESCRIPTION}} |
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
+## 🏗️ Architecture & Stack
+
+- **Discord framework — {{DISCORD_FRAMEWORK}}**  
+  {{DISCORD_FRAMEWORK_DESCRIPTION}}
+
+- **Database — {{DATABASE_STACK}}**  
+  {{DATABASE_DESCRIPTION}}
+
+- **Optional cache — {{CACHE_STACK}}**  
+  {{CACHE_DESCRIPTION}}
+
+- **Rendering or workers — {{PROCESSING_STACK}}**  
+  {{PROCESSING_DESCRIPTION}}
+
+- **External integrations — {{EXTERNAL_APIS}}**  
+  {{EXTERNAL_APIS_DESCRIPTION}}
+
+## ⚙️ Environment Variables
 
 ```env
-DISCORD_TOKEN=your_token_here
-DATABASE_URL=postgres://user:password@localhost:5432/{{DATABASE_NAME}}
-{{OPTIONAL_STORAGE_ENV}}=
+# Required
+DISCORD_TOKEN=
+DATABASE_URL=
+
+# Optional
+OWNER_ID=
+REDIS_URL=
+LOG_LEVEL=INFO
+{{OPTIONAL_API_KEY}}=
+{{OPTIONAL_API_SECRET}}=
 ```
 
-## ⚙️ Prerequisites
-
-- Python {{PYTHON_VERSION}} or newer  
-- Discord application and bot token  
-- PostgreSQL database if the bot uses persistent jobs/data  
-- Optional GPU or external service if the bot performs heavy processing  
-
-## 🛠️ Configuration
-
-The bot reads configuration from environment variables. Keep secrets in `.env` during development and configure production secrets through your deployment platform.
-
-## ▶️ Running Locally
-
-### Run Bot
+## 🚀 Local Development
 
 ```bash
-python bot.py
+git clone {{REPOSITORY_URL}}
+cd {{REPOSITORY_FOLDER}}
+
+python -m venv .venv
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# macOS / Linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
+python {{ENTRYPOINT}}
 ```
 
-### Run Worker
+### Discord application setup
+
+1. Create a Discord application and bot
+2. Enable only the privileged intents the bot requires
+3. Configure the OAuth scopes and permissions
+4. Add the token to `.env`
+5. Invite the bot to a development server
+6. Verify slash-command synchronization
+
+## 🧪 Testing and Quality
 
 ```bash
-python worker.py
+ruff check .
+pytest
+python -m compileall -q .
 ```
 
-If your bot does not use a worker, remove the worker section.
+Recommended smoke tests:
 
-## 🗂️ Commands
+- Extension import
+- Command synchronization
+- Database initialization
+- External-provider fallback
+- Persistent-view recovery
+- Asset and font validation
+- Graceful HTTP and database shutdown
 
-| Command | Description |
+## 🚀 Deployment
+
+- Store the token and database URL as platform secrets
+- Use a persistent database
+- Include local assets in the image or configure an asset mount
+- Install browser runtimes when Playwright is used
+- Configure a separate worker only when the architecture requires one
+- Confirm graceful shutdown closes HTTP, database, cache, and worker resources
+
+## 🛡️ Reliability and Security
+
+- Tokens never appear in source control or logs
+- Admin commands enforce Discord permissions or an allowlist
+- External requests use timeouts and rate limits
+- Scheduled loops are idempotent and do not start twice
+- Views isolate per-session state
+- Persistent records are recovered or expired safely
+- Heavy rendering runs outside the event loop
+- Local assets use portable paths
+- Failed providers use cache, fallback, or clear user-facing errors
+
+## 🧯 Troubleshooting
+
+| Problem | Check |
 |---|---|
-| `/{{COMMAND_NAME}}` | {{COMMAND_DESCRIPTION}} |
-
-## 🛠 Built With
-
-- **Python**
-- **discord.py**
-- **PostgreSQL**
-- **{{OPTIONAL_LIBRARY_1}}**
-- **{{OPTIONAL_LIBRARY_2}}**
-
-## 🔒 Security Notes
-
-- Never commit your Discord token  
-- Validate user input and attachments  
-- Use role or permission checks for admin commands  
-- Store secrets in environment variables  
-- Run heavy jobs outside the bot event loop  
+| Slash commands are missing | Sync logs, invite scopes, application ID |
+| Presence or maintenance task crashes | `@tasks.loop` decorator and duplicate starts |
+| Database is unavailable | Connection URL, SSL, pool initialization |
+| Images or fonts are missing | Portable asset root and Linux filename casing |
+| External search returns nothing | Credentials, provider status, fallback path |
 
 ## 🤝 Contributing
 
-Contributions are welcome. When opening PRs, include a clear description of the change and test the affected command flow.
+Test the affected command flow and include screenshots only when visible output changes.
 
 ## 📜 License
 
-This project is licensed under the {{LICENSE_NAME}} License. See [LICENSE](./LICENSE) for details.
+Licensed under the {{LICENSE_NAME}} License. See [LICENSE]({{LICENSE_PATH}}).
 
 ## 🙏 Acknowledgements
 
-- **discord.py** for the bot framework
 - {{ACKNOWLEDGEMENT_1}}
+- {{ACKNOWLEDGEMENT_2}}
 
-## ✉️ Contact
+## 👤 Author
 
-Open an issue for bugs, feature requests, or deployment help.
+{{AUTHOR_SECTION}}

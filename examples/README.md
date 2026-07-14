@@ -1,13 +1,11 @@
-# 📚 README Examples
+# Completed Examples
 
-This folder contains finished README examples based on real project types.
+These examples demonstrate the finished shape of each template category.
 
-| Example | Best For |
-|---|---|
-| `fullstack-web.example.md` | React + backend + database projects |
-| `ai-web-app.example.md` | AI tools, image apps, async jobs, and cloud storage |
-| `discord-bot.example.md` | Discord bots, slash commands, workers, and queues |
+- [AI Web App](./ai-web-app.example.md)
+- [Discord Bot](./discord-bot.example.md)
+- [Full-Stack Web](./fullstack-web.example.md)
+- [Backend API](./backend-api.example.md)
+- [Python CLI](./python-cli.example.md)
 
-Use these examples as references when filling in the templates.
-
-These examples are based on real projects, but sensitive values should always be replaced with placeholders.
+They are documentation references, not source-code starters.
